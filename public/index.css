@@ -300,6 +300,7 @@ html, body {
     font-size: 1.5vw;
     letter-spacing: -1px;
 }
+
 #moving-div {
     margin: 60px auto;
     bottom: 3%;
@@ -500,3 +501,19 @@ html, body {
 .social-media a:hover {
     color: #000;
 }
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#slides .slide {
+    animation: float 3s ease-in-out infinite;
+}
+
